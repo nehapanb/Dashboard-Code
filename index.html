@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neha Panbude</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  
+    <div class="vertical-navbar">
+        <h2>Dashboard</h2>
+        <a href="#statistics"><i class="fas fa-chart-bar"></i> Statistics</a>
+        <a href="#overview"><i class="fas fa-layer-group"></i> Overview</a>
+        <a href="#status"><i class="fas fa-info-circle"></i> Status</a>
+    </div>
+
+   
+    <div class="main-content">
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <h1>Neha Panbude</h1>
+                </div>
+                <div class="search-bar">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" placeholder="Search..." id="search-input">
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#career">Career</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons">
+                    <button id="openSignupModal">Sign Up</button>
+                    <button id="openLoginModal">Login</button>
+                </div>
+            </div>
+        </header>
+
+      
+        <div id="signupModal" class="modal">
+            <div class="modal-content">
+                <span id="closeSignupModal" class="close">&times;</span>
+                <h2>Sign Up</h2>
+                <form>
+                    <label for="signupUsername">Username:</label>
+                    <input type="text" id="signupUsername" name="signupUsername" required>
+                    <label for="signupEmail">Email:</label>
+                    <input type="email" id="signupEmail" name="signupEmail" required>
+                    <label for="signupPassword">Password:</label>
+                    <input type="password" id="signupPassword" name="signupPassword" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <p>Already a member? <a href="#" id="goToLoginModal">Click here to login</a></p>
+            </div>
+        </div>
+
+   
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span id="closeLoginModal" class="close">&times;</span>
+                <h2>Login</h2>
+                <form>
+                    <label for="loginEmail">Email:</label>
+                    <input type="email" id="loginEmail" name="loginEmail" required>
+
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" name="loginPassword" required>
+
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+
+        <section id="home" class="hero">
+            <div class="hero-overlay">
+                <h2>Welcome to My Website</h2>
+                <p>Building innovative solutions for your business.</p>
+            </div>
+        </section>
+
+       
+        <div class="about">
+            <h2>About Us</h2>
+            <p style="text-align: center;">We are a team of passionate professionals committed to delivering
+                high-quality solutions. Our achievements include:</p>
+            <section class="about-statistics">
+                <div class="stat-item">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>250+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-smile"></i>
+                    <h3>100+</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-trophy"></i>
+                    <h3>50+</h3>
+                    <p>Award Wins</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-user-friends"></i>
+                    <h3>20+</h3>
+                    <p>Team Members</p>
+                </div>
+            </section>
+        </div>
+
+   
+        <section id="career" class="career">
+            <h2>Join Our Team</h2>
+            <p>We are always looking for talented individuals to join our growing team.</p>
+        </section>
+
+      
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST">
+                <label for="contactName">Name:</label>
+                <input type="text" id="contactName" name="contactName" required>
+                <label for="contactEmail">Email:</label>
+                <input type="email" id="contactEmail" name="contactEmail" required>
+                <label for="contactMessage">Message:</label>
+                <textarea id="contactMessage" name="contactMessage" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+   
+        <footer>
+            <p>&copy; 2024 My Website | All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <script src="Modal.js"></script>
+</body>
+
+</html>
